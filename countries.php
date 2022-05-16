@@ -9,7 +9,7 @@ class Countries{
         $selectCountry = $this->db->prepare("SELECT * FROM country");
         $selectCountry->execute();
         $select = $selectCountry->fetchAll(PDO::FETCH_ASSOC);
-        echo json_encode($select, JSON_FORCE_OBJECT);
+        echo json_encode($select);
 
     }
 

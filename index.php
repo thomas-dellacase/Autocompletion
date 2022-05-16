@@ -12,9 +12,13 @@
 <body>
         <div class="container">
             <input type="text" name="input" id="countryInput" class="autocompleteInput" placeholder="Chercher un pays">
-            <ul class="autocompleteList" id="countryList">
-            
-            </ul>
+            <div class="autocompleteList" id="countryList">
+            </div>
         </div>
+        <div class="container">
+        <div class="autocompleteList" id="countryList2">
+            </div>
+        </div>
+
 </body>
 </html>
