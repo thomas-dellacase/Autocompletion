@@ -10,17 +10,35 @@ a{
 }
 body {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     Background-color: #1D1D37;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    height: 100%;
     text-align-last: center;
+}
+header{
+    color: #fff;
+    background-color: #1D1D20;
+    padding-top: 2%;
+    width:100%;
+    height: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+#headerIndex{
+    width: 100%;
 }
 hr{
     Background-color: #1D1D37;
     border: none;
     height: 1px;
+}
+#linkHeader {
+    align-self: center;
+    padding-left:2%
 }
 .container {
     margin:auto;
@@ -36,10 +54,9 @@ hr{
     left: 0;
 }
 .container2 {
-    margin:auto;
     width: 400px;
     position: relative;
-
+    padding-right:2%;
 }
 
 .autocompleteInput{
@@ -75,4 +92,13 @@ hr{
     width: calc(100% - 50px);
     font-weight: bold;
     cursor: pointer;
+}
+#artShow{
+    width: 100%;
+    background-color:#FFF;
+    border: 5px solid black;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top:3%;
+    padding-bottom:3%;
 }

@@ -11,17 +11,19 @@
 </head>
 <body>
     <header>
-        <h1>On a tout les pays en stock</h1>
+        <h1 id='headerIndex'>On a tout les pays en stock</h1>
     </header>
-        <div class="container">
-            <input type="text" name="input" id="countryInput" class="autocompleteInput" placeholder="Chercher un pays">
-            <div>
-                <div class="autocompleteList" id="countryList">
+        <main>
+            <div class="container">
+                <input type="text" name="input" id="countryInput" class="autocompleteInput" placeholder="Chercher un pays">
+                <div>
+                    <div class="autocompleteList" id="countryList">
+                        </div>
+                        <hr>
+                        <div class="autocompleteList" id="countryList2">
+                            </div>
+                        </div>
                     </div>
-                    <hr>
-                <div class="autocompleteList" id="countryList2">
-                </div>
-            </div>
-        </div>
+        </main>
 </body>
 </html>

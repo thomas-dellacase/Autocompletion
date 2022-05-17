@@ -17,12 +17,12 @@ $ok=$article->showCountry($_GET['id']);
     <title>Pays</title>
 </head>
 <body>
-    <header>
-        <a href="index.php">Home</a>
+    <header id='headerShow'>
+        <a href="index.php" id="linkHeader">Home</a>
         <?php
         echo "<h1>".$ok['0']['name']."</h1>";
         ?>
-            <div class="container">
+            <div class="container2">
                 <input type="text" name="input" id="countryInput" class="autocompleteInput" placeholder="Chercher un pays">
                 <div>
                     <div class="autocompleteList" id="countryList">
@@ -34,7 +34,7 @@ $ok=$article->showCountry($_GET['id']);
         </div>
     </header>
     <main>
-        <article>
+        <article id="artShow">
             <?php
             echo "<h2>".$ok['0']['name']."</h2>";
             echo "<h3>".$ok['0']['nicename']."</h3>";
@@ -43,7 +43,7 @@ $ok=$article->showCountry($_GET['id']);
             echo "<p>Numeros de pays:".$ok['0']['numcode']."</p>";
             echo "<p>Code de telephone:".$ok['0']['phonecode']."</p>";
             ?>
-        </div>
+        </article>
     </main>
 </body>
 </html>
