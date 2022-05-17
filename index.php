@@ -10,15 +10,18 @@
     <title>Autocompletion</title>
 </head>
 <body>
+    <div>
+
         <div class="container">
             <input type="text" name="input" id="countryInput" class="autocompleteInput" placeholder="Chercher un pays">
-            <div class="autocompleteList" id="countryList">
+            <div>
+                <div class="autocompleteList" id="countryList">
+                    </div>
+                    <hr>
+                <div class="autocompleteList" id="countryList2">
+                </div>
             </div>
         </div>
-        <div class="container">
-        <div class="autocompleteList" id="countryList2">
-            </div>
-        </div>
-
+        
 </body>
 </html>

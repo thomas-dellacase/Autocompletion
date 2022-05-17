@@ -70,9 +70,9 @@ const searchState = async searchText =>{
         if(matches.length > 0){
             const html = matches.map(match => `
             <div class="divSelect">
-
+            <a href="show.php/?id=${match.id}"> 
             <h4>${match.nicename} (${match.iso})<span></h4>
-            
+            </a>
             </div>`
             ).join('');
             console.log('coucou2');
@@ -84,9 +84,9 @@ const searchState = async searchText =>{
         if(matchess.length > 0){
             const html2 = matchess.map(match=>`
             <div class="divSelect2">
-
+            <a href="show.php/?id=${match.id}"> 
             <h4>${match.nicename} (${match.iso})<span></h4>
-
+            </a>
             </div>`
             ).join('');
             matchList2.innerHTML = html2;

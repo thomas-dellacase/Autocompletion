@@ -12,6 +12,12 @@ class Countries{
         echo json_encode($select);
 
     }
+    function showCountry($id){
+        $showCountry = $this->db->prepare("SELECT * FROM country WHERE id = :id");
+        $showCountry->execute(array('id' => $id));
+        $show = $showCountry->fetchAll(PDO::FETCH_ASSOC);
+        return $show;
+    }
 
 }
 $select = new Countries;
