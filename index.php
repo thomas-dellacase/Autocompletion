@@ -10,8 +10,9 @@
     <title>Autocompletion</title>
 </head>
 <body>
-    <div>
-
+    <header>
+        <h1>On a tout les pays en stock</h1>
+    </header>
         <div class="container">
             <input type="text" name="input" id="countryInput" class="autocompleteInput" placeholder="Chercher un pays">
             <div>
@@ -22,6 +23,5 @@
                 </div>
             </div>
         </div>
-        
 </body>
 </html>
