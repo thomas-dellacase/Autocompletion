@@ -10,7 +10,7 @@
     <title>Autocompletion</title>
 </head>
 <body>
-    <header>
+    <header class="responsiveIndex">
         <h1 id='headerIndex'>On a tout les pays en stock</h1>
     </header>
         <main>
@@ -25,5 +25,12 @@
                         </div>
                     </div>
         </main>
+        <footer>
+            <section id='secFooter'>
+            <p class="text-justify">Thomas Dellacase <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. 
+                                    Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. 
+                                    We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+            </section>
+        </footer>
 </body>
 </html>

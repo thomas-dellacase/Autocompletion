@@ -34,8 +34,6 @@ const searchState = async searchText =>{
     //     matchList.innerHTML = '';
     //     matchList2.innerHTML = '';
     // }
-
-    
     outputHtml(matches);
     outputHtml2(matchess);
 };
@@ -44,7 +42,7 @@ const searchState = async searchText =>{
         if(matches.length > 0){
             const html = matches.map(match => `
             <div class="divSelect">
-            <a href="show.php?id=${match.id}"> 
+            <a href="element.php?id=${match.id}"> 
             <h4>${match.nicename} (${match.iso})<span></h4>
             </a>
             </div>`
@@ -58,7 +56,7 @@ const searchState = async searchText =>{
         if(matchess.length > 0){
             const html2 = matchess.map(match=>`
             <div class="divSelect2">
-            <a href="show.php?id=${match.id}"> 
+            <a href="element.php?id=${match.id}"> 
             <h4>${match.nicename} (${match.iso})<span></h4>
             </a>
             </div>`
@@ -67,5 +65,13 @@ const searchState = async searchText =>{
         }
     };
 
-search.addEventListener('input', ()=> searchState(search.value))
+    function gotoSearch(event){
+        event.key === 'Enter' ? location.href = `recherche.php?recherche=${search.value}` : null;
+    }
+
+    search.addEventListener('keyup', (event)=> {
+        searchState(search.value)
+        gotoSearch(event)
+
+    });
 });
